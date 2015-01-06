@@ -1,0 +1,7 @@
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+CLASSDIR="${DIR}/Source/"
+javac "${CLASSDIR}MyProject.java" "${CLASSDIR}Employee.java"
+echo 'DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+CLASSDIR="${DIR}/Source/"
+java -cp "${CLASSDIR}" MyProject' > "${DIR}/sol"
+chmod +x "${DIR}/sol"
